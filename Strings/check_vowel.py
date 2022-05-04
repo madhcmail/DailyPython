@@ -14,3 +14,18 @@ def check_vowel(my_string):
 
 print(check_vowel("ABeeIghiObhkUul"))
 print(check_vowel("geeksforgeeks"))
+
+# 2nd Method
+
+vowels = ['a','e','i','o','u']
+flag = False
+def check_vowel(my_string):
+    for char in vowels:
+        if char in my_string or char in my_string.upper():
+            flag = True           
+        else:
+            flag = False
+    return "Accepted" if flag else "Not Accepted"
+    
+print(check_vowel("ABeeIghiObhkUul"))
+print(check_vowel("geeksforgeeks"))
