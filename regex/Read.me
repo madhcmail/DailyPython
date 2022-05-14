@@ -1,0 +1,14 @@
+Metacharacter : . ^ $ * + ? {} [] |()
+
+Meanings:
+
+[] --> Character class; Ex: [abc] or [a-d] - This will match any characters listed between braces
+* --> asterik allows for repititions. Instead of matching *, the * tell the regular expression that the previous character may be
+matched zero or more times. Ex: 'a[b-f]*g'
++ --> similar to * but this will match one or more times of previous character
+? --> which will match either once or zero times. It sorts of marks the character before as optional.
+{a,b} --> where a and b are decimal Integers. WHat it means is that there must be aleast a repetitions and atmost b
+
+
+re has search function. If we don't find match, then NONE is returned. 
+Otherwise, a Match object is returned. toa ctually see what match looks like we need to call GROUP method.
